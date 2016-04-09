@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 44;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2705FFFB1757D2420006CB22 /* audiodecoderbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705FFF41757D2420006CB22 /* audiodecoderbase.cpp */; };
-		2705FFFC1757D2420006CB22 /* audiodecodercoreaudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2705FFF51757D2420006CB22 /* audiodecodercoreaudio.cpp */; };
 		27ED8F4D1616472D00C3003B /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27ED8F4B1616472D00C3003B /* ofApp.cpp */; };
+		641F9C131CB9BD96003DFD7B /* audiodecoderbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641F9C101CB9BD96003DFD7B /* audiodecoderbase.cpp */; };
+		641F9C141CB9BD96003DFD7B /* audiodecodercoreaudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 641F9C111CB9BD96003DFD7B /* audiodecodercoreaudio.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
 		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
@@ -63,15 +63,15 @@
 
 /* Begin PBXFileReference section */
 		2705FFCA1757D1150006CB22 /* ofxAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxAudioDecoder.h; sourceTree = "<group>"; };
-		2705FFE91757D2420006CB22 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
-		2705FFEA1757D2420006CB22 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
-		2705FFEB1757D2420006CB22 /* audiodecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecoder.h; sourceTree = "<group>"; };
-		2705FFEC1757D2420006CB22 /* audiodecoderbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecoderbase.h; sourceTree = "<group>"; };
-		2705FFED1757D2420006CB22 /* audiodecodercoreaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecodercoreaudio.h; sourceTree = "<group>"; };
-		2705FFF41757D2420006CB22 /* audiodecoderbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiodecoderbase.cpp; sourceTree = "<group>"; };
-		2705FFF51757D2420006CB22 /* audiodecodercoreaudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiodecodercoreaudio.cpp; sourceTree = "<group>"; };
 		27ED8F4B1616472D00C3003B /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		27ED8F4C1616472D00C3003B /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
+		641F9C091CB9BD96003DFD7B /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		641F9C0A1CB9BD96003DFD7B /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		641F9C0B1CB9BD96003DFD7B /* audiodecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecoder.h; sourceTree = "<group>"; };
+		641F9C0C1CB9BD96003DFD7B /* audiodecoderbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecoderbase.h; sourceTree = "<group>"; };
+		641F9C0D1CB9BD96003DFD7B /* audiodecodercoreaudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audiodecodercoreaudio.h; sourceTree = "<group>"; };
+		641F9C101CB9BD96003DFD7B /* audiodecoderbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiodecoderbase.cpp; sourceTree = "<group>"; };
+		641F9C111CB9BD96003DFD7B /* audiodecodercoreaudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audiodecodercoreaudio.cpp; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -104,7 +104,7 @@
 				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
 				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
-				E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
@@ -127,7 +127,7 @@
 		2705FFB01757D0D40006CB22 /* ofxAudioDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				2705FFE61757D2420006CB22 /* lib */,
+				641F9C051CB9BD96003DFD7B /* libs */,
 				2705FFC31757D0E20006CB22 /* src */,
 			);
 			name = ofxAudioDecoder;
@@ -142,41 +142,49 @@
 			path = ../src;
 			sourceTree = "<group>";
 		};
-		2705FFE61757D2420006CB22 /* lib */ = {
+		641F9C051CB9BD96003DFD7B /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				2705FFE71757D2420006CB22 /* include */,
-				2705FFEF1757D2420006CB22 /* src */,
+				641F9C061CB9BD96003DFD7B /* audiodecoder */,
 			);
-			name = lib;
-			path = ../lib;
+			name = libs;
+			path = ../libs;
 			sourceTree = "<group>";
 		};
-		2705FFE71757D2420006CB22 /* include */ = {
+		641F9C061CB9BD96003DFD7B /* audiodecoder */ = {
 			isa = PBXGroup;
 			children = (
-				2705FFE81757D2420006CB22 /* apple */,
-				2705FFEB1757D2420006CB22 /* audiodecoder.h */,
-				2705FFEC1757D2420006CB22 /* audiodecoderbase.h */,
-				2705FFED1757D2420006CB22 /* audiodecodercoreaudio.h */,
+				641F9C071CB9BD96003DFD7B /* include */,
+				641F9C0F1CB9BD96003DFD7B /* src */,
+			);
+			path = audiodecoder;
+			sourceTree = "<group>";
+		};
+		641F9C071CB9BD96003DFD7B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				641F9C081CB9BD96003DFD7B /* Apple */,
+				641F9C0B1CB9BD96003DFD7B /* audiodecoder.h */,
+				641F9C0C1CB9BD96003DFD7B /* audiodecoderbase.h */,
+				641F9C0D1CB9BD96003DFD7B /* audiodecodercoreaudio.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		2705FFE81757D2420006CB22 /* apple */ = {
+		641F9C081CB9BD96003DFD7B /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				2705FFE91757D2420006CB22 /* CADebugMacros.h */,
-				2705FFEA1757D2420006CB22 /* CAStreamBasicDescription.h */,
+				641F9C091CB9BD96003DFD7B /* CADebugMacros.h */,
+				641F9C0A1CB9BD96003DFD7B /* CAStreamBasicDescription.h */,
 			);
-			path = apple;
+			path = Apple;
 			sourceTree = "<group>";
 		};
-		2705FFEF1757D2420006CB22 /* src */ = {
+		641F9C0F1CB9BD96003DFD7B /* src */ = {
 			isa = PBXGroup;
 			children = (
-				2705FFF41757D2420006CB22 /* audiodecoderbase.cpp */,
-				2705FFF51757D2420006CB22 /* audiodecodercoreaudio.cpp */,
+				641F9C101CB9BD96003DFD7B /* audiodecoderbase.cpp */,
+				641F9C111CB9BD96003DFD7B /* audiodecodercoreaudio.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -222,7 +230,7 @@
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4328148138ABC890047C5CB /* openFrameworks.a */,
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,6 +303,8 @@
 /* Begin PBXProject section */
 		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ofApp" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -322,10 +332,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworks.a;
+			path = openFrameworksDebug.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -353,9 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				641F9C141CB9BD96003DFD7B /* audiodecodercoreaudio.cpp in Sources */,
+				641F9C131CB9BD96003DFD7B /* audiodecoderbase.cpp in Sources */,
 				27ED8F4D1616472D00C3003B /* ofApp.cpp in Sources */,
-				2705FFFB1757D2420006CB22 /* audiodecoderbase.cpp in Sources */,
-				2705FFFC1757D2420006CB22 /* audiodecodercoreaudio.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
