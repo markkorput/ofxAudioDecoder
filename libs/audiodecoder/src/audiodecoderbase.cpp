@@ -3,7 +3,7 @@
  * libaudiodecoder API Header File
  * Latest version available at: http://www.oscillicious.com/libaudiodecoder
  *
- * Copyright (c) 2010-2012 Albert Santoni, Bill Good, RJ Ryan  
+ * Copyright (c) 2010-2012 Albert Santoni, Bill Good, RJ Ryan
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files
@@ -26,13 +26,13 @@
  */
 
 /*
- * The text above constitutes the entire libaudiodecoder license; however, 
+ * The text above constitutes the entire libaudiodecoder license; however,
  * the Oscillicious community also makes the following non-binding requests:
  *
  * Any person wishing to distribute modifications to the Software is
  * requested to send the modifications to the original developer so that
- * they can be incorporated into the canonical version. It is also 
- * requested that these non-binding requests be included along with the 
+ * they can be incorporated into the canonical version. It is also
+ * requested that these non-binding requests be included along with the
  * license above.
  */
 
@@ -52,5 +52,3 @@ AudioDecoderBase::~AudioDecoderBase()
 {
 
 }
-
-

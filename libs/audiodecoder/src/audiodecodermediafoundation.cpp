@@ -20,6 +20,8 @@
  *                                                                         *
  ***************************************************************************/
 
+#ifdef _WIN32
+
 #include <iostream>
 #include <string.h>
 #include <windows.h>
@@ -55,7 +57,7 @@ std::wstring s2ws(const std::string& s)
 {
  int len;
  int slength = (int)s.length() + 1;
- len = MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, 0, 0); 
+ len = MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, 0, 0);
  wchar_t* buf = new wchar_t[len];
  MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, buf, len);
  std::wstring r(buf);
@@ -120,16 +122,16 @@ int AudioDecoderMediaFoundation::open()
 	std::wstring stemp = s2ws(m_filename); // Temporary buffer is required
 	LPCWSTR result = (LPCWSTR)stemp.c_str();
     */
-   
-    //LPCWSTR result; 
+
+    //LPCWSTR result;
     const char* utf8Str = m_filename.c_str();
-    MultiByteToWideChar(CP_UTF8, 
-                        0, 
-                        utf8Str, 
+    MultiByteToWideChar(CP_UTF8,
+                        0,
+                        utf8Str,
                         -1, //assume utf8Str is NULL terminated and give us back a NULL terminated string
                         (LPWSTR)m_wcFilename,
                         512);
-    
+
     LPCWSTR result = m_wcFilename;
 
     HRESULT hr(S_OK);
@@ -403,7 +405,7 @@ releaseSample:
     long samples_read = size - framesNeeded * m_iChannels;
     m_iCurrentPosition += samples_read;
     if (sDebug) { std::cout << "read() " << size << " returning " << samples_read << std::endl; }
-	
+
 	const int sampleMax = 1 << (m_iBitsPerSample-1);
 	//Convert to float samples
 	if (m_iChannels == 2)
@@ -585,7 +587,7 @@ bool AudioDecoderMediaFoundation::configureAudioStream()
         return false;
     }
 
-	
+
 	//MediaFoundation will not do samplerate conversion without a transform in the pipeline.
     hr = m_pAudioType->SetUINT32(MF_MT_AUDIO_SAMPLES_PER_SECOND, kSampleRate);
     if (FAILED(hr)) {
@@ -732,3 +734,4 @@ inline __int64 AudioDecoderMediaFoundation::mfFromFrame(__int64 frame)
 {
     return static_cast<double>(frame) / m_iSampleRate * 1e7;
 }
+#endif

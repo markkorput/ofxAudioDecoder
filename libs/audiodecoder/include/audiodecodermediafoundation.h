@@ -8,7 +8,7 @@
  * \date Jan 10, 2011
  */
 
-
+#ifdef _WIN32
 #ifndef AUDIODECODERMEDIAFOUNDATION_H
 #define AUDIODECODERMEDIAFOUNDATION_H
 
@@ -60,3 +60,4 @@ class DllExport AudioDecoderMediaFoundation : public AudioDecoderBase {
 };
 
 #endif // ifndef AUDIODECODERMEDIAFOUNDATION_H
+#endif
